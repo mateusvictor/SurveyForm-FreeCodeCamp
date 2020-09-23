@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id='head'>
+    <h1 id='title'>freeCodeCamp - Survey Form</h1>
+    <p id="description">By Mateus Victor</p>
+    </div>
+    <div id="form-div">
+        <form id = "survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class='form-group'>
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="number" id="number" class="form-control" placeholder="Age" min="1" max="99">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Do you like programming? </p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                </label>
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>
+                What area do you pretend to work?
+                </p>
+                <label><input name="prefer" value= "front-end" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                <label>
+                <input name="prefer" value="back-end" type="checkbox" class="input-checkbox">Back-end Projects</label>
+                <label><input name="prefer" value="desktop-aplications" type="checkbox" class="input-checkbox">Desktop Aplications</label>
+                <label><input name="prefer" value="machine-learning" type="checkbox" class="input-checkbox">Machine Learning</label>
+                <label><input name="prefer" value="data-science" type="checkbox" class="input-checkbox">Data Science</label>
+                <label><input name="prefer" value="mobile-aplications" type="checkbox" class="input-checkbox">Mobile Aplications</label>
+            </div>
+            <div class="form-group">
+                <p>Some other commentary? </p>
+                <textarea id="comments" class="input-textarea" name="content" placeholder="Enter your commentary here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit">SUBMIT</button>
+            </div>  
+         </form>
+         <footer>
+         	<p>
+         	<i><br>Eu serei um programador profissional. <br>~Mateus 2020.<br></i>
+         	</p>
+         </footer>
+    </div>
+</body>
+</html>
